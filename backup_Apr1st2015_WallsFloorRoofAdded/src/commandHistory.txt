@@ -1,0 +1,1000 @@
+   11  root RectangleBeam_t*.root -l
+   12  ls *.root -hlrt
+   13  mv RectangleBeam_t0.root RectangleBeam_HalfX0.25mmHalfY2.82mm_X0Y0Z39.8cm_CarbonAsSDDLayer_t0.root
+   14  mv RectangleBeam_t1.root RectangleBeam_HalfX0.25mmHalfY2.82mm_X0Y0Z39.8cm_CarbonAsSDDLayer_t1.root
+   15  mv RectangleBeam_t2.root RectangleBeam_HalfX0.25mmHalfY2.82mm_X0Y0Z39.8cm_CarbonAsSDDLayer_t2.root
+   16  mv RectangleBeam_t3.root RectangleBeam_HalfX0.25mmHalfY2.82mm_X0Y0Z39.8cm_CarbonAsSDDLayer_t3.root
+   17  root RectangleBeam_HalfX0.25mmHalfY2.82mm_X0Y0Z39.8cm_CarbonAsSDDLayer_t*.root -l
+   18  vi rectangleRealNeutronSpectrum600keV.mac 
+   19  cp rectangleRealNeutronSpectrum600keV.mac debugRectangleRealNeutronSpectrum600keV.mac 
+   20  vi debugRectangleRealNeutronSpectrum600keV.mac 
+   21  ./SlacTut debugRectangleRealNeutronSpectrum600keV.mac 
+   22  ls ScintillatorRun_t*.root
+   23  ls ScintillatorRun_t*.root -lhrt
+   24  ls *.root -hlrt
+   25  vi debugRectangleRealNeutronSpectrum600keV.mac 
+   26  root ScintillatorRun_t*.root -l
+   27  vi debugRectangleRealNeutronSpectrum600keV.mac 
+   28  mv ScintillatorRun_t0.root RectangleBeam_HalfX0.25mmHalfY2.82mm_X0Y0Z39.8cm_SiliconAsSDDLayer_t0.root
+   29  mv ScintillatorRun_t1.root RectangleBeam_HalfX0.25mmHalfY2.82mm_X0Y0Z39.8cm_SiliconAsSDDLayer_t1.root
+   30  mv ScintillatorRun_t2.root RectangleBeam_HalfX0.25mmHalfY2.82mm_X0Y0Z39.8cm_SiliconAsSDDLayer_t2.root
+   31  mv ScintillatorRun_t3.root RectangleBeam_HalfX0.25mmHalfY2.82mm_X0Y0Z39.8cm_SiliconAsSDDLayer_t3.root
+   32  vi debugRectangleRealNeutronSpectrum600keV.mac 
+   33  f
+   34  ./SlacTut debugRectangleRealNeutronSpectrum600keV.mac 
+   35  c
+   36  ps
+   37  vi debugRectangleRealNeutronSpectrum600keV.mac 
+   38  kill -9 10012
+   39  ps
+   40  s
+   41  ps
+   42  ./SlacTut debugRectangleRealNeutronSpectrum600keV.mac 
+   43  ls ScintillatorRun_t*.root -hlrt
+   44  root ScintillatorRun_t*.root -l
+   45  vi debugRectangleRealNeutronSpectrum600keV.mac 
+   46  vi rectangleRealNeutronSpectrum600keV.mac 
+   47  vi debugRectangleRealNeutronSpectrum600keV.mac 
+   48  ls ScintillatorRun_t*.root
+   49  rm ScintillatorRun_t*.root
+   50  ./SlacTut debugRectangleRealNeutronSpectrum600keV.mac 
+   51  cd ../../dir_of_source/
+   52  ls
+   53  cd copied_handson3/src/
+   54  ls
+   55  vi ../include/RunAction.hh 
+   56  vi ../include/Run.hh 
+   57  vi Run.cc 
+   58  vi ../tutorial.cc 
+   59  vi ActionInitialization.cc 
+   60  cd ../../backup_Sep152014_ScintillatorArray22Bars/src/
+   61  vi DetectorConstruction.cc 
+   62  ls *DetectorConstruction.cc*
+   63  vi DetectorConstruction.cc 
+   64  vi ActionInitialization.cc
+   65  cd ../../copied_handson3/src/
+   66  c
+   67  vi DetectorConstruction.cc 
+   68  cd ../..
+   69  cp -r copied_handson3/ backup_Sep222014_ScintillatorArrayDistance90cm
+   70  ls
+   71  cd -
+   72  vi DetectorConstruction.cc 
+   73  vi ../../../smallScripts/coordinatesCaculator.C 
+   74  vi DetectorConstruction.cc 
+   75  vi ../../../smallScripts/coordinatesCaculator.C 
+   76  vi DetectorConstruction.cc 
+   77  vi ../../../smallScripts/coordinatesCaculator.C 
+   78  ls ../../../smallScripts/
+   79  ls *.C -hlrt
+   80  ls ../../../smallScripts/*.C -hlrt
+   81  c
+   82  vi ../../../smallScripts/coordinatesCaculator.C 
+   83  vi DetectorConstruction.cc 
+   84  vi ../../../smallScripts/coordinatesCaculator.C 
+   85  vi DetectorConstruction.cc 
+   86  vi ../../../smallScripts/coordinatesCaculator.C 
+   87  root ../../../smallScripts/coordinatesCaculator.C -l
+   88  vi DetectorConstruction.cc 
+   89  vi ../../../smallScripts/coordinatesCaculator.C 
+   90  root ../../../smallScripts/coordinatesCaculator.C -l
+   91  vi DetectorConstruction.cc 
+   92  exit
+   93  ls *mac
+   94  vi run1.mac 
+   95  vi SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+   96  ls ../build_tmp
+   97  vi ../build_tmp/SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+   98  ls
+   99  ls tutorial.*
+  100  vi SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  101  cat SDDBarArrayRectangleRealNeutronSpectrum600keV.mac
+  102  ls ../build_tmp2/
+  103  ls ../build_tmp2/*.C
+  104  ls ../build_tmp2/*.cc
+  105  c
+  106  ls ../../smallScripts/
+  107  ls ../../bashScripts/
+  108  ls ../../
+  109  ls ../../template_files/
+  110  ls ../../template_files/Runcc/
+  111  ls ../../template_files/RunActioncc/
+  112  vi ../../template_files/Runcc/ALoopChangeYToIcommandline.sh 
+  113  ls ../../smallScripts/
+  114  vi ../../smallScripts/makeAGraph.C 
+  115  f
+  116  ls
+  117  ls *.
+  118  ls *.C
+  119  mv Graphfor11Bars.C ../../smallScripts/
+  120  cd ../../smallScripts/
+  121  f
+  122  ls
+  123  vi Graphfor11Bars.C 
+  124  root Graphfor11Bars.C 
+  125  vi Graphfor11Bars.C 
+  126  root Graphfor11Bars.C -l
+  127  vi Graphfor11Bars.C 
+  128  root Graphfor11Bars.C -l
+  129  vi Graphfor11Bars.C 
+  130  root Graphfor11Bars.C -l
+  131  vi Graphfor11Bars.C 
+  132  root Graphfor11Bars.C -l
+  133  vi Graphfor11Bars.C 
+  134  root Graphfor11Bars.C -l
+  135  vi Graphfor11Bars.C 
+  136  root Graphfor11Bars.C -l
+  137  vi Graphfor11Bars.C 
+  138  root Graphfor11Bars.C -l
+  139  vi Graphfor11Bars.C 
+  140  root Graphfor11Bars.C -l
+  141  vi Graphfor11Bars.C 
+  142  root Graphfor11Bars.C -l
+  143  vi Graphfor11Bars.C 
+  144  root Graphfor11Bars.C -l
+  145  vi Graphfor11Bars.C 
+  146  root Graphfor11Bars.C -l
+  147  vi Graphfor11Bars.C 
+  148  root Graphfor11Bars.C -l
+  149  vi Graphfor11Bars.C 
+  150  root Graphfor11Bars.C -l
+  151  vi Graphfor11Bars.C 
+  152  root Graphfor11Bars.C -l
+  153  c
+  154  vi Graphfor11Bars.C 
+  155  root Graphfor11Bars.C -l
+  156  vi Graphfor11Bars.C 
+  157  root Graphfor11Bars.C -l
+  158  vi Graphfor11Bars.C 
+  159  root Graphfor11Bars.C -l
+  160  vi Graphfor11Bars.C 
+  161  root Graphfor11Bars.C -l
+  162  vi Graphfor11Bars.C 
+  163  root Graphfor11Bars.C -l
+  164  vi Graphfor11Bars.C 
+  165  root Graphfor11Bars.C -l
+  166  vi Graphfor11Bars.C 
+  167  root Graphfor11Bars.C -l
+  168  vi Graphfor11Bars.C 
+  169  root Graphfor11Bars.C -l
+  170  mv Graphfor11Bars.C Graphfor11BarsInnerLayer.C 
+  171  cp Graphfor11BarsInnerLayer.C Graphfor11BarsOuterLayer.C 
+  172  vi Graphfor11BarsOuterLayer.C 
+  173  root Graphfor11BarsOuterLayer.C -l
+  174  vi Graphfor11BarsOuterLayer.C 
+  175  root Graphfor11BarsInnerLayer.C -l
+  176  vi Graphfor11BarsOuterLayer.C 
+  177  root Graphfor11BarsInnerLayer.C -l
+  178  root Graphfor11BarsOuterLayer.C -l
+  179  vi Graphfor11BarsOuterLayer.C 
+  180  root -l
+  181  vi Graphfor11BarsOuterLayer.C 
+  182  root -l
+  183  vi Graphfor11BarsOuterLayer.C 
+  184  root Graphfor11BarsOuterLayer.C -l
+  185  vi Graphfor11BarsOuterLayer.C 
+  186  root Graphfor11BarsOuterLayer.C -l
+  187  vi Graphfor11BarsOuterLayer.C 
+  188  root Graphfor11BarsOuterLayer.C -l
+  189  vi Graphfor11BarsOuterLayer.C 
+  190  root Graphfor11BarsOuterLayer.C -l
+  191  cat Graphfor11BarsOuterLayer.C 
+  192  :q
+  193  vi Graphfor11BarsInnerLayer.C 
+  194  root Graphfor11BarsInnerLayer.C -l
+  195  vi Graphfor11BarsInnerLayer.C 
+  196  root Graphfor11BarsInnerLayer.C -l
+  197  vi Graphfor11BarsInnerLayer.C 
+  198  root Graphfor11BarsInnerLayer.C -l
+  199  cd ../dir_of_build/build_tmp
+  200  ls
+  201  ls ScintillatorRun.root -hlt
+  202  cp SDDBarArrayRectangleRealNeutronSpectrum600keV.mac tmp.mac
+  203  vi tmp.mac 
+  204  make -j2
+  205  history
+  206  ls * -hlrt
+  207  cd ../build_Sep172014/
+  208  f
+  209  ls -hlrt
+  210  vi G4History.macro 
+  211  cd -
+  212  ls -hlrt
+  213  ./SlacTut tmp.mac 
+  214  c
+  215  vi tmp.mac 
+  216  ls *
+  217  ls *.root
+  218  ls *.root -hlrt
+  219  vi tmp.mac 
+  220  ./SlacTut 
+  221  vi SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  222  vi tmp.mac 
+  223  ./SlacTut tmp.mac 
+  224  ls *.root 
+  225  ls *.root -hlt
+  226  mv ScintillatorRun.root ../../producedRootFiles/SDDArrayRectangleBeamShape_ShorterDistance20cm_15MEvents.root
+  227  cd ../../producedRootFiles/
+  228  f
+  229  c
+  230  ls SDDArray*.root
+  231  f
+  232  vi treeviewer.C 
+  233  root treeviewer.C -l
+  234  cd -
+  235  ./SlacTut 
+  236  make -j2
+  237  ./SlacTut 
+  238  root -l
+  239  ps
+  240  kill -9 13337
+  241  kill -9 13338
+  242  f
+  243  ps
+  244  rooot -l
+  245  root -l
+  246  ls *.root
+  247  cd ../../producd ../../dir_of_source/
+  248  ls
+  249  cd backup_Sep222014_ScintillatorArrayDistance90cm/
+  250  c
+  251  vi ../../smallScripts/coordinatesCaculator.C 
+  252  cd src/
+  253  vi DetectorConstruction.cc 
+  254  ls ../../../smallScripts/coordinatesCaculator.C 
+  255  vi ../../../smallScripts/coordinatesCaculator.C 
+  256  vi DetectorConstruction.cc 
+  257  f
+  258  ls ../..
+  259  vi DetectorConstruction.cc 
+  260  cd ../../copied_handson3/src/
+  261  vi DetectorConstruction.cc 
+  262  f
+  263  vi ../include/Analysis.hh 
+  264  f
+  265  cd ../../..
+  266  c
+  267  ls
+  268  yum install krb5-libs
+  269  su
+  270  exit
+  271  pwd
+  272  ls
+  273  cd Geantfour/dir_of_build/
+  274  ls build_*
+  275  ls
+  276  cd build_tmp
+  277  ls *.mac
+  278  f
+  279  ls *.root
+  280  ls *.root -hlrt
+  281  root ScintillatorRun.root -l
+  282  ls *.C
+  283  vi treeviewer.C 
+  284  root treeviewer.C -l
+  285  ./SlacTut 
+  286  ls *.root
+  287  ls *.root 0hlt
+  288  ls *.root -hlt
+  289  ls ../../producedRootFiles/
+  290  mv ScintillatorRun.root ../../producedRootFiles/SDDArrayRectangleBeamShape_SDDHorizentalLayout_15MEvents.root 
+  291  f
+  292  ls ../../producedRootFiles/
+  293  ./SlacTut 
+  294  vi SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  295  cd ../build_Sep172014/
+  296  f
+  297  ls
+  298  vi run1.mac 
+  299  vi run2.mac 
+  300  cat run2.mac 
+  301  c
+  302  ls
+  303  ./SlacTut 
+  304  ls *.mac
+  305  vi SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  306  ./SlacTut 
+  307  ls
+  308  cd ../build_tmp
+  309  make -j2
+  310  ls
+  311  ./SlacTut 
+  312  f
+  313  ls *.root
+  314  ls *.root -hlt
+  315  f
+  316  ls ../../producedRootFiles/
+  317  cd ../../producedRootFiles/
+  318  root SDDArrayRectangleBeamShape_SDDHorizentalLayout_15MEvents.root -l
+  319  root SDDArrayRectangleBeamShape15MEvents.root  -l
+  320  ls *.C
+  321  ls ../
+  322  ls ../smallScripts/
+  323  vi ../smallScripts/ntupleToHistogramSDDArray.C 
+  324  f
+  325  ls ../template_files/
+  326  ls ../template_files/RunActioncc/
+  327  ls ../template_files/Runcc/
+  328  cd ..
+  329  f
+  330  c
+  331  ls
+  332  ls files_to_present/
+  333  ls files_to_present/SDDArrayRun/
+  334  ls files_to_present/SDDArrayRun/*.C
+  335  f
+  336  cd files_to_present/SDDArrayRun/
+  337  c
+  338  ls
+  339  c
+  340  ls *.C
+  341  ls *.C -hlrt
+  342  vi templateWYZ.C 
+  343  vi templateWYZwy.C 
+  344  rm templateWYZ*.C
+  345  f
+  346  ls *.C -hlrt
+  347  f
+  348  vi ntupleToGraphSDDArray.C 
+  349  vi smalltemplate.C 
+  350  vi templateNtupleToGraph.C 
+  351  cp templateNtupleToGraph.C templateNtupleToHistogram.C 
+  352  vi templateNtupleToHistogram.C 
+  353  vi backup_ntupleToGraphSDDArray.C 
+  354  f
+  355  ls ../../smallScripts/*.c
+  356  ls ../../smallScripts/
+  357  vi ../../smallScripts/modelOfMultiHistogramsInOnePlot.C 
+  358  f
+  359  vi ../../smallScripts/ntupleToHistogramSDDArray.C 
+  360  vi ../../smallScripts/fourSddEnergyNoZeroCutInOnePlot.C 
+  361  vi ../../smallScripts/bar1TimeFourSddEnergyEqualZeroCutInOnePlot.C 
+  362  f
+  363  ls ../..
+  364  f
+  365  ls
+  366  ls *.C
+  367  f
+  368  ls ../../smallScripts/*.C
+  369  f
+  370  ls ../
+  371  ls ../SDD_Run/
+  372  ls ../files_analysis_script/
+  373  vi ../files_analysis_script/ntuple_to_histogram_beam_scan.C 
+  374  pwd
+  375  ls *.C
+  376  ls ../..
+  377  pwd
+  378  vi ../files_analysis_script/ntuple_to_histogram_beam_scan.C
+  379  f
+  380  ls *.C
+  381  vi templateNtupleToHistogram.C 
+  382  root templateNtupleToHistogram.C -l
+  383  vi templateNtupleToHistogram.C 
+  384  vi ../files_analysis_script/ntuple_to_histogram_beam_scan.C
+  385  vi templateNtupleToHistogram.C 
+  386  root templateNtupleToHistogram.C -l
+  387  vi templateNtupleToHistogram.C 
+  388  root templateNtupleToHistogram.C -l
+  389  vi templateNtupleToHistogram.C 
+  390  root templateNtupleToHistogram.C -l
+  391  ls Bar11Time_CutByBar11*
+  392  rm Bar11Time_CutByBar11*
+  393  f
+  394  mkdir NoOfEventsScanOnEachBar
+  395  ls *.C
+  396  mv templateNtupleToHistogram.C NoOfEventsScanOnEachBar/
+  397  cd NoOfEventsScanOnEachBar/
+  398  pwd
+  399  c
+  400  ls
+  401  vi templateNtupleToHistogram.C 
+  402  root templateNtupleToHistogram.C -l
+  403  vi templateNtupleToHistogram.C 
+  404  ls ../*.C
+  405  vi ../modifiedNtupleToGraph.C 
+  406  vi ../ntupleToGraphSDDArray.C 
+  407  vi ../modifiedNtupleToGraph.C 
+  408  f
+  409  ls ../*.sh
+  410  cp ../local.sh .
+  411  vi local.sh 
+  412  f
+  413  vi local.sh 
+  414  ./local.sh 
+  415  vi local.sh 
+  416  ./local.sh 
+  417  ls *.C
+  418  vi modifiedNtupleToGraph.C 
+  419  rm modifiedNtupleToGraph.C 
+  420  c
+  421  vi modifiedNtupleToHistogram.C 
+  422  vi templateNtupleToHistogram.C 
+  423  vi local.sh 
+  424  ls *.C
+  425  vi ntupleToHistogram.C
+  426  f
+  427  vi local.sh 
+  428  pwd
+  429  vi local.sh 
+  430  ./local.sh 
+  431  vi ntupleToHistogram.C 
+  432  f
+  433  ls ../
+  434  f
+  435  ls ../*.C
+  436  cp ../smalltemplate.C tinytemplate.C 
+  437  vi tinytemplate.C 
+  438  c
+  439  ls
+  440  vi tinytemplate.C 
+  441  f
+  442  for i in {1..22..1}; do sed "s/Y/$i/g" "tinytemplate.C" >> "tmp.txt"; done
+  443  cat tmp.txt 
+  444  vi ntupleToHistogram.C 
+  445  f
+  446  vi ntupleToHistogram.C 
+  447  root ntupleToHistogram.C -l
+  448  ls *.root 
+  449  root *.root -l
+  450  ls *.pdf
+  451  ls *.root
+  452  f
+  453  ls *.C
+  454  vi ntupleToHistogram.C 
+  455  f
+  456  vi templateNtupleToHistogram.C 
+  457  vi local.sh 
+  458  vi ntupleToHistogram.C 
+  459  ./local.sh 
+  460  vi ntupleToHistogram.C 
+  461  vi templateNtupleToHistogram.C 
+  462  vi ntupleToHistogram.C 
+  463  vi templateNtupleToHistogram.C 
+  464  f
+  465  ./local.sh 
+  466  vi ntupleToHistogram.C 
+  467  ls 
+  468  ls *.root 
+  469  rm *.root 
+  470  ls *.pdf
+  471  rm *.pdf
+  472  f
+  473  ls
+  474  root ntupleToHistogram.C -l
+  475  root -l
+  476  ls *.root
+  477  root *.root -l
+  478  cd ../../../smallScripts/
+  479  ls
+  480  vi coordinatesCaculator.C 
+  481  root coordinatesCaculator.C -l
+  482  vi coordinatesCaculator.C 
+  483  root coordinatesCaculator.C -l
+  484  vi coordinatesCaculator.C 
+  485  f
+  486  root coordinatesCaculator.C -l
+  487  cd ../dir_of_build/
+  488  ls
+  489  cd build_SDDArray_ShorterDistance
+  490  mkdir build_SDDArray_ShorterDistance
+  491  f
+  492  cd build_SDDArray_ShorterDistance/
+  493  cmake -DGeant4_DIR=/home/junhui/Geantfour/Geantf_install/lib64/Geant4-10.0.2 /home/junhui/Geantfour/dir_of_source/copied_handson3/
+  494  make -j2
+  495  ./SlacTut 
+  496  cp ../build_tmp/SDDBarArrayRectangleRealNeutronSpectrum600keV.mac .
+  497  vi SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  498  ./SlacTut SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  499  vi SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  500  root ScintillatorRun.root -l
+  501  ./SlacTut SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  502  root ScintillatorRun.root -l
+  503  vi SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  504  ./SlacTut SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  505  ls ../../smallScripts/*.C
+  506  ls ../../producedRootFiles/*.C
+  507  vi ../../producedRootFiles/treeviewer.C 
+  508  cp ../../producedRootFiles/treeviewer.C .
+  509  vi treeviewer.C 
+  510  ls *.root
+  511  vi treeviewer.C 
+  512  root treeviewer.C -l
+  513  root /home/junhui/Geantfour/files_to_present/DebugDiscrepancyOfSddEnergyBetweenCalculationAndSimulation/SDDEnergyCutHitInSDDAndAnyof22Bars_BeamHalfX0.25HalfY1.41mm_SDDBarsArray_Innerlayer20cmDistance_1MEvents.root -l
+  514  ./SlacTut 
+  515  ls *.eps
+  516  mv G4OpenGL_0.eps ../../Plots_screenshots/BarsArrayDistance20cmSDD.eps
+  517  f
+  518  ls *.C
+  519  make -j2
+  520  ./SlacTut 
+  521  make -j2
+  522  ./SlacTut 
+  523  make -j2
+  524  ./SlacTut 
+  525  make -j2
+  526  ./SlacTut 
+  527  make -j2
+  528  ./SlacTut 
+  529  make -j2
+  530  ./SlacTut 
+  531  ls *.eps
+  532  mv G4OpenGL_0.eps ../../Plots_screenshots/BarsArraySDDCorrectedGeometry.eps
+  533  ./SlacTut 
+  534  mv G4OpenGL_0.eps ../../Plots_screenshots/BarsArraySDDCorrectedGeometry_2.eps
+  535  f
+  536  cd ..
+  537  ls
+  538  mkdir build_SDDArray
+  539  mv build_SDDArray build_SDDArrayCorrectedGeometry
+  540  cd build_SDDArrayCorrectedGeometry/
+  541  cmake -DGeant4_DIR=/home/junhui/Geantfour/Geantf_install/lib64/Geant4-10.0.2 /home/junhui/Geantfour/dir_of_source/copied_handson3/
+  542  make -j2
+  543  ls ../
+  544  ls ../build_SDDArray_ShorterDistance/*.mac
+  545  vi ../build_SDDArray_ShorterDistance/SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  546  cp ../build_SDDArray_ShorterDistance/SDDBarArrayRectangleRealNeutronSpectrum600keV.mac .
+  547  ls
+  548  ./SlacTut 
+  549  ./SlacTut SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  550  make -j2
+  551  vi SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  552  ./SlacTut SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  553  ./SlacTut 
+  554  make -j2
+  555  ./SlacTut SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  556  vi SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  557  ./SlacTut SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  558  ls ../../producedRootFiles/*.root 
+  559  mv ScintillatorRun.root ../../producedRootFiles/SDDArrayRectangleBeamShape_CorrectedGeometry_1MEvents.root 
+  560  f
+  561  vi SDDBarArrayRectangleRealNeutronSperestart
+  562  reboot
+  563  cd ../dir_of_build/
+  564  ls
+  565  cd build_tmp
+  566  ls 
+  567  ls *.csv
+  568  ls ../build_Sep172014/
+  569  ls ../build_Sep172014/*.csv
+  570  f
+  571  ks
+  572  f
+  573  ls
+  574  cd 
+  575  cd -
+  576  cd ..
+  577  c
+  578  ls
+  579  ls -rt 
+  580  ls -rthl 
+  581  cd build_SDDArrayCorrectedGeometry/
+  582  ls *
+  583  c
+  584  ls ScintillatorRun_ScintillatorRun.csv -hltr
+  585  df -h
+  586  c
+  587  ls
+  588  df -h
+  589  c
+  590  ls
+  591  tar -czvf tarTextFile.tar ScintillatorRun_ScintillatorRun.csv 
+  592  du -h
+  593  df -h
+  594  ls
+  595  rm tarTextFile.tar 
+  596  df -h
+  597  f
+  598  ls
+  599  ls -al
+  600  ls -alh
+  601  ls ../../producedTextFiles/
+  602  ls ../../producedRootFiles/
+  603  ls ../../producedRootFiles/ -hlt
+  604  exit
+  605  du -h
+  606  pwd
+  607  cd Geantfour/
+  608  ls
+  609  du -h
+  610  c
+  611  ls
+  612  cd producedRootFiles/
+  613  du -h
+  614  df -h
+  615  ls ../producedTextFiles/
+  616  f
+  617  ls *.root -hlt
+  618  c
+  619  ls *.root
+  620  ls *.root -hlt
+  621  du -f
+  622  du -h
+  623  df -h
+  624  cd ..
+  625  du -h
+  626  cd ..
+  627  ls
+  628  du -h
+  629  f
+  630  ls
+  631  ls root_v5.34.19.source.tar.gz -hlrt
+  632  rm root_v5.34.19.source.tar.gz
+  633  f
+  634  ls -rhlt Videos/
+  635  cd Software_download/
+  636  ls
+  637  du -h
+  638  cd ..
+  639  s
+  640  ls
+  641  cd root/
+  642   du -h
+  643  cd ..
+  644  ls
+  645  cd Music/
+  646  du -h
+  647  ls
+  648  rm -r 
+  649  rm -r The\ Wanted/
+  650  cd ..
+  651  ls
+  652  ls Templates/
+  653  ls
+  654  ls -r 
+  655  ls -rhlt 
+  656  f
+  657  du -hc
+  658  du -c
+  659  du -ch | grep total
+  660  du -s
+  661  du -S
+  662  du -sh
+  663  du -ch | grep total
+  664  ls
+  665  pwd
+  666  du -h /home/junhui/Geantfour/
+  667  f
+  668  ls
+  669  du -h /home/junhui/Downloads/
+  670  du -h /home/junhui/Documents/
+  671  du -h /home/junhui/Document_1~ 
+  672  ls
+  673  rm Document_1~ 
+  674  rm Geantf_debugging~ 
+  675  ls
+  676  f
+  677  ls -hlrt
+  678  ccccc
+  679  c
+  680  ls
+  681  du -h /home/junhui/BashScripts/
+  682  du -h /home/junhui/Music/
+  683  du -h /home/junhui/Public/
+  684  du -h /home/junhui/Templates/
+  685  du -h /home/junhui/root/
+  686  ls
+  687  du -h /home/junhui/Videos/
+  688  du -h /home/junhui/Documents/
+  689  du -h /home/junhui/Desktop/
+  690  du -h /home/junhui/smallScripts/
+  691  du -h /home/junhui/Pictures/
+  692  du -h /home/junhui/Software_download/
+  693  ls
+  694  du -h
+  695  du -h | grep G
+  696  du -h | grep G --exclude "Geantfour"
+  697  du -h | grep G --exclude "Geant*"
+  698  du -h | grep G --exclude "*Geant*"
+  699  df -h
+  700  pwd
+  701  cd ..
+  702  c
+  703  ls
+  704  cd lost+found/
+  705  du -h lost+found/
+  706  du -h
+  707  df -h
+  708  c
+  709  ls
+  710  cd ..
+  711  ls
+  712  du -h root/
+  713  du -h tmp/
+  714  du -h usr/
+  715  ls
+  716  df -h
+  717  ls
+  718  du -h lib64/
+  719  du -h lib
+  720  c
+  721  du -h
+  722  du -ch | grep total
+  723  ls
+  724  du -c root/
+  725  du -hc root/
+  726  du -ch usr/
+  727  ls
+  728  du -ch var
+  729  ls
+  730  du -ch sbin/
+  731  du -ch ./
+  732  df -ch ./
+  733  df -ch
+  734  df -h
+  735  exit
+  736  shutdown
+  737  cd ../..
+  738  ls
+  739  vi backup_Aug182014_TwoBarFourShieldsSD_realBeam/src/DetectorConstruction.cc 
+  740  ls
+  741  c
+  742  ls ..
+  743  ls ../producedRootFiles/
+  744  ls ../files_to_present/
+  745  ls ../smallScripts/
+  746  vi ../smallScripts/makeAGraph.C 
+  747  vi ../smallScripts/Graphfor11BarsInnerLayer.C 
+  748  vi ../smallScripts/ntupleToHistogramSDDArray.C 
+  749  ls ../files_to_present/SDDArrayRun/
+  750  ls ../files_to_present/SDDArrayRun/NoOfEventsScanOnEachBarHistogram/
+  751  ls ../files_to_present/SDDArrayRun/DeeperAnalysisNtuple/AnaysisWithCorrectGeometry/*.C
+  752  ls ../files_to_present/SDDArrayRun/DeeperAnalysisNtuple/AnaysisWithCorrectGeometry/templateNtupleToGraph.C 
+  753  vi ../files_to_present/SDDArrayRun/DeeperAnalysisNtuple/AnaysisWithCorrectGeometry/templateNtupleToGraph.C 
+  754  cd ../files_to_present/SDDArrayRun/DeeperAnalysisNtuple/AnaysisWithCorrectGeometry/
+  755  ls *.C
+  756  vi ntupleToGraph.C 
+  757  cp templateNtupleToGraph.C combineTwoGraph.C
+  758  vi combineTwoGraph.C 
+  759  root combineTwoGraph.C 0l
+  760  ps
+  761  kill -9 7767
+  762  kill -9 7768
+  763  vi combineTwoGraph.C 
+  764  root combineTwoGraph.C -l
+  765  exit
+  766  pwd
+  767  ls
+  768  cd Geantfour/
+  769  ls
+  770  cd dir_of_build/
+  771  ls
+  772  cd build_tmp3/
+  773  ls *.csv -lht
+  774  du -h
+  775  df -h
+  776  f
+  777  ls *.csv
+  778  ls *.csv -hlt
+  779  f
+  780  awk 'NR>0{gsub(","," ")}1' ScintillatorRun_ScintillatorRun.csv > ../../producedTextFiles/SDDArrayRectangleBeamShape_HitPositionAdded_GeometryModifiedOct09_10Mevents.txt
+  781  ls ../../usingBashDuplicateScriptSegment/
+  782  ls ../../usingBashDuplicateScriptSegment/Eventactioncc/
+  783  vi ../../usingBashDuplicateScriptSegment/Eventactioncc/ALoopChangeYToIcommandline.sh 
+  784  cp ../../usingBashDuplicateScriptSegment/Eventactioncc/ALoopChangeYToIcommandline.sh ../../files_to_present/SDDArrayRun/SDDEnergyVSHitTimeInBars/
+  785  ls
+  786  f
+  787  ./SlacTut 
+  788  ls *.eps
+  789  mv G4OpenGL_0.eps ../../Plots_screenshots/BarsAngleRotation.eps
+  790  make -j2
+  791  ./SlacTut 
+  792  make -j2
+  793  ./SlacTut 
+  794  make -j2
+  795  ./SlacTut 
+  796  make -j2
+  797  ./SlacTut 
+  798  ls ../../smallScripts/
+  799  vi ../../smallScripts/coordinatesCaculator.C 
+  800  cp ../../smallScripts/coordinatesCaculator.C ../../smallScripts/anglesCaculator.C 
+  801  vi ../../smallScripts/anglesCaculator.C 
+  802  root ../../smallScripts/anglesCaculator.C -l
+  803  vi ../../smallScripts/anglesCaculator.C 
+  804  root ../../smallScripts/anglesCaculator.C -l
+  805  ./SlacTut 
+  806  make -j2
+  807  ./SlacTut 
+  808  make -j2
+  809  ./SlacTut 
+  810  mv G4OpenGL_0.eps ../../Plots_screenshots/BarsAngleCorrectedRotation.eps
+  811  vi SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  812  ./SlacTut SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  813  ls *.csv
+  814  vi SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  815  ./SlacTut SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  816  ls 
+  817  ls ScintillatorRun_ScintillatorRun.csv -hlt
+  818  ls ../../producedTextFiles/
+  819  f
+  820  awk 'NR>0{gsub(","," ")}1' ScintillatorRun_ScintillatorRun.csv > ../../producedTextFiles/SDDArrayRectangleBeamShape_HitPositionAdded_GeometryModifiedOct16_BarsRotation_10Mevents.txt 
+  821  f
+  822  cd ../..
+  823  du -h
+  824  ls
+  825  cd Geantf_install/
+  826  du ./ -h
+  827  ls
+  828  ls ..
+  829  cd ..
+  830  ls
+  831  du ./ -h
+  832  ls
+  833  cd geant4.10.00.p02
+  834  ls
+  835  du ./ -h
+  836  cd ..
+  837  ls
+  838  f
+  839  c
+  840  ls
+  841  cd dir_of_build/build_tmp3/
+  842  ls
+  843  ls ScintillatorRun_ScintillatorRun.csv -hlt
+  844  ls ../../producedTextFiles/
+  845  ls ../../producedTextFiles/ -hlt
+  846  f
+  847  ls ScintillatorRun_ScintillatorRun.csv -hlt
+  848  mv ScintillatorRun_ScintillatorRun.csv ../../producedTextFiles/
+  849  ls
+  850  ls ../../*.sh
+  851  vi ../../*.sh
+  852  vi SDDBarArrayRectangleRealNeutronSpectrum600keV.mac 
+  853  pwd
+  854  cd ../../
+  855  f
+  856  ls
+  857  tar -czf G4Directories.tar.gz /home/junhui/Geantfour/Geantf_install/lib64/Geant4-10.0.2 /home/junhui/Geantfour/dir_of_source/copied_handson3/  /home/junhui/Geantfour/geant4.10.00.p02 /home/junhui/Geantfour/dir_of_build/build_tmp3/
+  858  ls G4Directories.tar.gz 
+  859  ls G4Directories.tar.gz -hlt
+  860  ls *.sh
+  861  jobsub_submit -f G4Directories.tar.gz -G fermilab -N 1 -M --OS=SL5,SL6 --resource-provides=usage_model=DEDICATED,OPPORTUNISTIC file://${PWD}/fermiGridTest.sh"
+  862  ls | wc -l
+  863  ls
+  864  ls usingBashDuplicateScriptSegment/RunActioncc/
+  865  ls usingBashDuplicateScriptSegment/RunActioncc/local.sh 
+  866  vi usingBashDuplicateScriptSegment/RunActioncc/local.sh 
+  867  ls ./ | wc -l
+  868  ls /home/junhui/Geantfour/Geantf_install/lib64/Geant4-10.0.2 | wc -l
+  869  ls /home/junhui/Geantfour/dir_of_source/copied_handson3 | wc -l
+  870  ls /home/junhui/Geantfour/dir_of_build/build_tmp3 | wc -l
+  871  ls /home/junhui/Geantfour/Geantf_install/lib64/Geant4-10.0.2
+  872  ls /home/junhui/Geantfour/dir_of_source/copied_handson3
+  873  ls home/junhui/Geantfour/dir_of_build/build_tmp3
+  874  ls /home/junhui/Geantfour/dir_of_build/build_tmp3
+  875  diff /home/junhui/Geantfour/dir_of_build/build_tmp3/run1.mac /home/junhui/Geantfour/dir_of_source/copied_handson3/run1.mac 
+  876  ls ../../producedRootFiles/*.root
+  877  ls ../../producedRootFiles/
+  878  f
+  879  cd ../../files_to_present/SDDArrayRun/
+  880  ls
+  881  cd SDDEnergyVSHitTimeInBars/
+  882  ls
+  883  vi local.sh 
+  884  f
+  885  vi local.sh 
+  886  ls
+  887  vi templateCombineTwoGraph.C 
+  888  cp templateCombineTwoGraph.C originalCombineTwoGraph.C 
+  889  vi templateCombineTwoGraph.C 
+  890  ls
+  891  vi ALoopChangeYToIcommandline.sh 
+  892  vi templateCombineTwoGraph.C 
+  893  vi shortTempplate1.C
+  894  vi templateCombineTwoGraph.C 
+  895  vi shortTempplate1.C
+  896  mv originalCombineTwoGraph.C modifiedCombineTwoGraph.C 
+  897  vi modifiedCombineTwoGraph.C 
+  898  vi templateCombineTwoGraph.C 
+  899  cp templateCombineTwoGraph.C modifiedCombineTwoGraph.C 
+  900  vi modifiedCombineTwoGraph.C 
+  901  vi ALoopChangeYToIcommandline.sh 
+  902  root templateCombineTwoGraph.C -l
+  903  vi ALoopChangeYToIcommandline.sh 
+  904  for i in {4..22..1}; do sed "s/Y/$i/g" templatefBARHCID.cc >> "tmp.txt"; done
+  905  vi shortTempplate1.C 
+  906  for i in {2..11..1}; do sed "s/Z/$i/g" shortTempplate1.C >> "tmp.txt"; done
+  907  vi tmp.txt 
+  908  cp shortTempplate1.C shortTempplate2.C 
+  909  vi shortTempplate2.C 
+  910  for i in {12..22..1}; do sed "s/Z/$i/g" shortTempplate2.C >> "tmp2.txt"; done
+  911  vi tmp2.txt 
+  912  cat tmp.txt 
+  913  vi modifiedCombineTwoGraph.C 
+  914  vi local.sh 
+  915  ls tmp*.txt
+  916  rm tmp*.txt
+  917  ls shortTempplate*
+  918  vi local.sh 
+  919  f
+  920  vi local.sh 
+  921  pwd
+  922  ls
+  923  vi local.sh 
+  924  vi modifiedCombineTwoGraph.C 
+  925  f
+  926  vi local.sh 
+  927  ./local.sh 
+  928  vi modifiedCombineTwoGraph.C 
+  929  vi local.sh 
+  930  ./local.sh 
+  931  vi modifiedCombineTwoGraph.C 
+  932  vi local.sh 
+  933  ./local.sh 
+  934  vi modifiedCombineTwoGraph.C 
+  935  ls *.C
+  936  vi shortTempplate2.C 
+  937  vi modifiedTmp2.C 
+  938  ./local.sh 
+  939  vi templateCombineTwoGraph.C 
+  940  vi modified
+  941  vi modifiedCombineTwoGraph.C 
+  942  root modifiedCombineTwoGraph.C -l
+  943  vi modifiedCombineTwoGraph.C 
+  944  root modifiedCombineTwoGraph.C -l
+  945  cd ../../..
+  946  ls
+  947  cd dir_of_build/
+  948  ls
+  949  cd ../dir_of_source/
+  950  f
+  951  ls
+  952  cp -r HandsOn3/ backup_Oct102014_SDD22BarsGeometryFinal
+  953  ls
+  954  ls backup_Oct102014_SDD22BarsGeometryFinal/src/*
+  955  f
+  956  cd HandsOn3/src/
+  957  ls *
+  958  cd ../..
+  959  f
+  960  ls
+  961  cd backup_Oct102014_SDD22BarsGeometryFinal/
+  962  ls
+  963  rm -r src/
+  964  rm -r include/
+  965  rm *
+  966  ls
+  967  cd ..
+  968  cp -r copied_handson3/ backup_Oct102014_SDD22BarsGeometryFinalV
+  969  rm -r backup_Oct102014_SDD22BarsGeometryFinal
+  970  f
+  971  ls
+  972  cd backup_Oct102014_SDD22BarsGeometryFinalV/src/
+  973  vi RunAction.cc 
+  974  d
+  975  c
+  976  cat RunAction.cc 
+  977  f
+  978  ls
+  979  cd ..
+  980  ls
+  981  cd copied_handson3/src/
+  982  vi DetectorConstruction.cc 
+  983  cd ../..
+  984  cp -r copied_handson3/ backup_Oct162014_SDD22BarsGeometryFinalV_BarsAngleRotation
+  985  ls
+  986  cd -
+  987  vi ../include/Analysis.hh 
+  988  f
+  989  vi ../../../fermiGridTest.sh 
+  990  cat ../../../fermiGridTest.sh 
+  991  vi ../../../fermiGridTest.sh 
+  992  cat ../../../fermiGridTest.sh 
+  993  ifconfig -a
+  994  cat /etc/sysconfig/network-scripts/ifcfg-eth0 
+  995  vi /etc/sysconfig/network-scripts/ifcfg-eth0 
+  996  su
+  997  vi /etc/sysconfig/network-scripts/ifcfg-eth0 
+  998  su
+  999  ls netstatOutput.txt 
+ 1000  su
+ 1001  ls
+ 1002  cd Geantfour/
+ 1003  cd dir_of_source/
+ 1004  ls
+ 1005  cd copied_handson3/src/
+ 1006  ls
+ 1007  vi netstatOutput.txt 
+ 1008  su
+ 1009  f
+ 1010  history > commandHistory.txt
